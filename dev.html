@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개발 바로가기 - Untitled RPG</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .back-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .back-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 40px;
+            font-size: 1.1em;
+        }
+
+        .dimension-section {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            border-left: 5px solid #667eea;
+        }
+
+        .dimension-section:last-of-type {
+            border-left-color: #764ba2;
+        }
+
+        .dimension-title {
+            font-size: 1.5em;
+            color: #333;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .place-id {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+            font-family: 'Courier New', monospace;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            flex: 1;
+            min-width: 200px;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .btn-studio {
+            background: #ff6b6b;
+            color: white;
+        }
+
+        .btn-studio:hover {
+            background: #ee5a52;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+        }
+
+        .btn-play {
+            background: #51cf66;
+            color: white;
+        }
+
+        .btn-play:hover {
+            background: #40c057;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(81, 207, 102, 0.4);
+        }
+
+        .icon {
+            margin-right: 8px;
+        }
+
+        @media (max-width: 600px) {
+            .button-group {
+                flex-direction: column;
+            }
+            
+            .btn {
+                min-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html" class="back-btn">← 메인으로 돌아가기</a>
+    </div>
+
+    <div class="container">
+        <h1>🔧 개발 바로가기</h1>
+        <p class="subtitle">개발용 플레이스 빠른 접근</p>
+
+        <div class="dimension-section">
+            <div class="dimension-title">1차원 개발 플레이스</div>
+            <div class="place-id">Place ID: 105997983233939</div>
+            <div class="button-group">
+                <a href="roblox-studio:1+launchmode:edit+task:EditPlace+placeId:105997983233939" class="btn btn-studio">
+                    <span class="icon">🔧</span>스튜디오에서 열기
+                </a>
+                <a href="roblox://placeID=105997983233939" class="btn btn-play">
+                    <span class="icon">▶️</span>게임 플레이하기
+                </a>
+            </div>
+        </div>
+
+        <div class="dimension-section">
+            <div class="dimension-title">2차원 개발 플레이스</div>
+            <div class="place-id">Place ID: 120489890928457</div>
+            <div class="button-group">
+                <a href="roblox-studio:1+launchmode:edit+task:EditPlace+placeId:120489890928457" class="btn btn-studio">
+                    <span class="icon">🔧</span>스튜디오에서 열기
+                </a>
+                <a href="roblox://placeID=120489890928457" class="btn btn-play">
+                    <span class="icon">▶️</span>게임 플레이하기
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
